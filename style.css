@@ -42,7 +42,7 @@
 
 .div-image {
   margin: 0;
-  height: 80vh;
+  height: 75vh;
   background-image: url('images/hero.enc');
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@
     max-width: 35rem;
     max-height: 35rem;
     text-align: center;
-    top: 220px;
+    top: 150px;
     left: 220px;
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(12px);
@@ -82,4 +82,21 @@
 
 .dropdown-item {
     color: white;
+}
+
+#conteudo {
+    flex: 1;
+}
+
+#footer {
+  margin-top: auto;
+}
+
+.container {
+  color: white;
+}
+
+#rodape {
+  color: rgba(255, 255, 255, 0.685);
+  font-size: 15px;
 }

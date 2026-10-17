@@ -104,3 +104,57 @@
 card {
   align-items: center;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+.div-image {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding-top: 24px;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#texto-degrade-jogos {
+  font-size: 4rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #02FCEE, #9D49F2);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  text-align: center;
+
+}
+
+.col {
+  padding-top: 24px;
+}
+
+.card-text.fg-2.flex-grow-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;   
+}

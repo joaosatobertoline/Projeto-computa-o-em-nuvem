@@ -1,0 +1,182 @@
+:root {
+  --bs-primary: #9D49F2;
+  --bs-secondary: #DEA0F8;
+  --bs-info: #4218D9;
+  --bs-light: #02FCEE;
+  --bs-dark: #321784;
+
+  --bs-primary-rgb: 157, 73, 242;
+  --bs-secondary-rgb: 222, 160, 248;
+  --bs-info-rgb: 66, 24, 217;
+  --bs-light-rgb: 2, 252, 238;
+  --bs-dark-rgb: 50, 23, 132;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #8536d6; 
+  --bs-btn-active-bg: #722bb8;
+  --bs-btn-active-border-color: #722bb8;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-secondary {
+  color: #DEA0F8;
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-hover-bg: #dda4f5; 
+  --bs-btn-active-bg: #cd9de2de;
+  --bs-btn-active-border-color: #c393d8fb;
+  --bs-btn-disabled-bg: var(--bs-secondary);
+  --bs-btn-disabled-border-color: var(--bs-secondary);
+}
+
+.bg-dark {
+  background-color: var(--bs-dark) !important;
+}
+
+.navbar-dark {
+  --bs-navbar-bg: var(--bs-dark);
+}
+
+.div-image {
+  margin: 0;
+  height: 75vh;
+  background-image: url('images/fundo-recomendação.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#card-bem-vindo {
+    max-width: 35rem;
+    max-height: 35rem;
+    text-align: center;
+    top: 150px;
+    left: 220px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(157,73,242,0.5);
+    box-shadow: 0 0 30px rgba(157,73,242,0.3);
+}
+
+.texto-degrade {
+  font-size: 4rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #02FCEE, #9D49F2);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  
+}
+
+#texto-bem-vindo {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.dropdown-menu {
+    background-color: #9D49F2;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+#conteudo {
+    flex: 1;
+}
+
+#footer {
+  margin-top: auto;
+}
+
+.container {
+  color: white;
+}
+
+#rodape {
+  color: rgba(255, 255, 255, 0.685);
+  font-size: 15px;
+}
+
+card {
+  align-items: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+.div-image {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding-top: 24px;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#texto-degrade-jogos {
+  font-size: 4rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #02FCEE, #9D49F2);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  text-align: center;
+
+}
+
+.col {
+  padding-top: 24px;
+}
+
+.card-text.fg-2.flex-grow-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;   
+}
+
+.recomendacao-titulo {
+ font-size: 4rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #DEA0F8, #02FCEE);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  text-align: center;
+}
+
+.recomendacao-texto {
+  text-align: center;
+  color: #02FCEE
+}
+
+.recomendacao-link {
+  text-align: center;   
+}
+
+.container.px-4 {
+    text-align: center;
+}

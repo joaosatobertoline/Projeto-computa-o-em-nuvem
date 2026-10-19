@@ -1,303 +1,269 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
-        <link rel="stylesheet" href="jogos.css">
-        <title>PIXELVERSE</title>
-    </head>
-    <body class="vh-100 d-flex flex-column overflow-hidden">
-      <div id="conteudo">
-    <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-      <div class="container">
-        <img src="images/logo.png" alt="Logo" width="300" height="80" class="d-inline-block align-text-top">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuNavbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-semibold" href="#">Jogos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-                    <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Serviços
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Recomendações</a></li>
-            <li><a class="dropdown-item" href="#">Notícias</a></li>
-            <li><a class="dropdown-item" href="#">Analise</a></li>
-          </ul>
-        </li>
-            <li class="nav-item ms-lg-3">
-              <a class="btn btn-primary rounded-pill px-4" href="#">Entrar</a>
-            </li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="jogos.css">
+    <title>PIXELVERSE</title>
+</head>
+
+<body class="vh-100 d-flex flex-column overflow-hidden">
+    <div id="conteudo">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+                <div class="container">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Logo PIXELVERSE" width="300" height="80" class="d-inline-block align-text-top">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Abrir menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menuNavbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-semibold" href="jogos.html">Jogos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Serviços
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="recomendacao.html">Recomendações</a></li>
+                                    <li><a class="dropdown-item" href="noticias.html">Notícias</a></li>
+                                    <li><a class="dropdown-item" href="analise.html">Análise</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ms-lg-3">
+                                <a class="btn btn-primary rounded-pill px-4" href="#">Entrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="div-image">
+                <h1 id="texto-degrade-jogos">Jogos em destaque</h1>
+
+                <div class="container px-4">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center g-4">
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Elden Ring.jpg" class="card-img" alt="Elden Ring" draggable="false">
+                                    <h5 class="mt-2 mb-0">Elden Ring</h5>
+                                    <p class="card-text fg-2 flex-grow-1">RPG de Ação - Mundo Aberto - Fantasia Sombria</p>
+                                    <a href="jogos/EldenRing.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/The Legend of Zelda.jpg" class="card-img" alt="The Legend of Zelda: Ocarina of Time" draggable="false" id="tamanho">
+                                    <h5 class="mt-2 mb-0">The Legend of Zelda: Ocarina of Time</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Aventura - Ação - Quebra-Cabeças</p>
+                                    <a href="jogos/TheLegendofZelda.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Outlast.avif" class="card-img" alt="Outlast" draggable="false">
+                                    <h5 class="mt-2 mb-0">Outlast</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Terror - Sobrevivência - Furtividade</p>
+                                    <a href="jogos/Outlast.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/DOOM Eternal.png" class="card-img" alt="DOOM Eternal" draggable="false">
+                                    <h5 class="mt-2 mb-0">DOOM Eternal</h5>
+                                    <p class="card-text fg-2 flex-grow-1">FPS - Ação Intensa - Combate</p>
+                                    <a href="jogos/DOOMEternal.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Doki Doki Literature Club!.webp" class="card-img" alt="Doki Doki Literature Club!" draggable="false">
+                                    <h5 class="mt-2 mb-0">Doki Doki Literature Club!</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Visual Novel - Terror Psicológico - Romance</p>
+                                    <a href="jogos/DokiDoki.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Among Us.jpg" class="card-img" alt="Among Us" draggable="false">
+                                    <h5 class="mt-2 mb-0">Among Us</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Multiplayer - Dedução Social - Trabalho em Equipe</p>
+                                    <a href="jogos/AmongUs.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Persona 5.jpg" class="card-img" alt="Persona 5" draggable="false">
+                                    <h5 class="mt-2 mb-0">Persona 5</h5>
+                                    <p class="card-text fg-2 flex-grow-1">RPG - Simulação Social - Combate por Turnos</p>
+                                    <a href="jogos/Persona5.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Detroit Become Human.webp" class="card-img" alt="Detroit: Become Human" draggable="false">
+                                    <h5 class="mt-2 mb-0">Detroit: Become Human</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Ficção Interativa - Escolhas e Consequências - Narrativa Cinematográfica</p>
+                                    <a href="jogos/Detroit.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Civilization VI.avif" class="card-img" alt="Civilization VI" draggable="false">
+                                    <h5 class="mt-2 mb-0">Civilization VI</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Estratégia por Turnos - Construção de Impérios - Diplomacia</p>
+                                    <a href="jogos/CivilizationVI.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Devil May Cry 5.jpg" class="card-img" alt="Devil May Cry 5" draggable="false">
+                                    <h5 class="mt-2 mb-0">Devil May Cry 5</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Hack and Slash - Ação - Combate Estiloso</p>
+                                    <a href="jogos/DevilMayCry5.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Into the Breach.jpg" class="card-img" alt="Into the Breach" draggable="false">
+                                    <h5 class="mt-2 mb-0">Into the Breach</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Estratégia por Turnos - Tática - Ficção Científica</p>
+                                    <a href="jogos/IntotheBreach.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Red Dead Redemption 2.jpg" class="card-img" alt="Red Dead Redemption 2" draggable="false">
+                                    <h5 class="mt-2 mb-0">Red Dead Redemption 2</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Mundo Aberto - Faroeste - Aventura Narrativa</p>
+                                    <a href="jogos/RedDeadRedemption2.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Rainbow Six Siege.jpg" class="card-img" alt="Rainbow Six Siege" draggable="false">
+                                    <h5 class="mt-2 mb-0">Rainbow Six Siege</h5>
+                                    <p class="card-text fg-2 flex-grow-1">FPS Tático - Multiplayer Competitivo - Estratégia em Equipe</p>
+                                    <a href="jogos/RainbowSixSiege.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Gris.jpg" class="card-img" alt="Gris" draggable="false">
+                                    <h5 class="mt-2 mb-0">Gris</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Plataforma - Arte Visual - Jornada Emocional</p>
+                                    <a href="jogos/Gris.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Undertale.png" class="card-img" alt="Undertale" draggable="false">
+                                    <h5 class="mt-2 mb-0">Undertale</h5>
+                                    <p class="card-text fg-2 flex-grow-1">RPG - Humor - Escolhas e Consequências</p>
+                                    <a href="jogos/Undertale.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <img src="images/Layers of Fear.jpg" class="card-img" alt="Layers of Fear" draggable="false">
+                                    <h5 class="mt-2 mb-0">Layers of Fear</h5>
+                                    <p class="card-text fg-2 flex-grow-1">Terror Psicológico - Exploração - Narrativa Imersiva</p>
+                                    <a href="jogos/LayersofFear.html" class="btn btn-primary mt-3">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="navbar-expand-lg mt-auto navbar-dark bg-dark py-4 text-center" id="footer">
+        <div class="container">
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item text-white mx-3">
+                    <a class="link-body-emphasis text-white text-decoration-none" href="index.html">Início</a>
+                </li>
+                <li class="list-inline-item mx-3">
+                    <a class="link-body-emphasis text-white text-decoration-none" href="jogos.html">Jogos</a>
+                </li>
+                <li class="list-inline-item mx-3">
+                    <a class="link-body-emphasis text-white text-decoration-none" href="sobre.html">Sobre</a>
+                </li>
+                <li class="list-inline-item mx-3">
+                    <a class="link-body-emphasis text-white text-decoration-none" href="contato.html">Contato</a>
+                </li>
+            </ul>
+
+            <span id="rodape">&copy; 2026 KJpixelgames — Todos os direitos reservados</span>
         </div>
-      </div>
-    </nav>
-</header>
-<div class="div-image">
-<h1 id="texto-degrade-jogos">Jogos em destaque</h1>
-<div class="container px-4">     
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center g-4">
-                
-<div class="col">
-<div class="card h-100">
-<div class="card-body d-flex flex-column">
-<img src="images/Elden Ring.jpg" class="card-img" alt="Elden Ring" draggable="false">
-<h5 class="mt-2 mb-0">Elden Ring</h5>
-<p class="card-text fg-2 flex-grow-1">RPG de Ação - Mundo Aberto - Fantasia Sombria</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
+    </footer>
 
-<div class="col">
-<div class="card h-100">
-<div class="card-body d-flex flex-column">
-<img src="images/The Legend of Zelda.jpg" class="card-img" alt="The Legend of Zelda: Ocarina of Time" draggable="false" id="tamanho">
-<h5 class="mt-2 mb-0">The Legend of Zelda: Ocarina of Time</h5>
-<p class="card-text fg-2 flex-grow-1">Aventura - Ação - Quebra-Cabeças</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-
-<div class="col">
-<div class="card h-100">
-<div class="card-body d-flex flex-column">
-<img src="images/Outlast.avif" class="card-img" alt="Outlast" draggable="false">
-<h5 class="mt-2 mb-0">Outlast</h5>
-<p class="card-text fg-2 flex-grow-1">Terror - Sobrevivência - Furtividade</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
-<div class="card-body d-flex flex-column">
-<img src="images/DOOM Eternal.png" class="card-img" alt="DOOM Eternal" draggable="false">
-<h5 class="mt-2 mb-0">DOOM Eternal</h5>
-<p class="card-text fg-2 flex-grow-1">FPS - Ação Intensa - Combate</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
-<div class="card-body d-flex flex-column">
-<img src="images/Doki Doki Literature Club!.webp" class="card-img" alt="Doki Doki Literature Club!" draggable="false">
-<h5 class="mt-2 mb-0">Doki Doki Literature Club!</h5>
-<p class="card-text fg-2 flex-grow-1">Visual Novel - Terror Psicológico - Romance</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
-<div class="card-body d-flex flex-column">
-<img src="images/Among Us.jpg" class="card-img" alt="Among Us" draggable="false">
-<h5 class="mt-2 mb-0">Among Us</h5>
-<p class="card-text fg-2 flex-grow-1">Multiplayer - Dedução Social - Trabalho em Equipe</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
- </div>
-
-<div class="col">
-<div class="card h-100">
-<div class="card-body d-flex flex-column">
-<img src="images/Persona 5.jpg" class="card-img" alt="Persona 5" draggable="false">
-<h5 class="mt-2 mb-0">Persona 5</h5>
-<p class="card-text fg-2 flex-grow-1">RPG - Simulação Social - Combate por Turnos</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Detroit Become Human.webp" class="card-img" alt="Detroit: Become Human" draggable="false">
-<h5 class="mt-2 mb-0">Detroit: Become Human</h5>
-<p class="card-text fg-2 flex-grow-1">Ficção Interativa - Escolhas e Consequências - Narrativa Cinematográfica</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Civilization VI.avif" class="card-img" alt="Civilization VI" draggable="false">
-<h5 class="mt-2 mb-0">Civilization VI</h5>
-<p class="card-text fg-2 flex-grow-1">Estratégia por Turnos - Construção de Impérios - Diplomacia</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Devil May Cry 5.jpg" class="card-img" alt="Devil May Cry 5" draggable="false">
-<h5 class="mt-2 mb-0">Devil May Cry 5</h5>
-<p class="card-text fg-2 flex-grow-1">Hack and Slash - Ação - Combate Estiloso</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Into the Breach.jpg" class="card-img" alt="Into the Breach" draggable="false">
-<h5 class="mt-2 mb-0">Into the Breach</h5>
-<p class="card-text fg-2 flex-grow-1">Estratégia por Turnos - Tática - Ficção Científica</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Red Dead Redemption 2.jpg" class="card-img" alt="Red Dead Redemption 2" draggable="false">
-<h5 class="mt-2 mb-0">Red Dead Redemption 2</h5>
-<p class="card-text fg-2 flex-grow-1">Mundo Aberto - Faroeste - Aventura Narrativa</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Rainbow Six Siege.jpg" class="card-img" alt="Rainbow Six Siege" draggable="false">
-<h5 class="mt-2 mb-0">Rainbow Six Siege</h5>
-<p class="card-text fg-2 flex-grow-1">FPS Tático - Multiplayer Competitivo - Estratégia em Equipe</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Gris.jpg" class="card-img" alt="Gris" draggable="false">
-<h5 class="mt-2 mb-0">Gris</h5>
-<p class="card-text fg-2 flex-grow-1">Plataforma - Arte Visual - Jornada Emocional</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Undertale.png" class="card-img" alt="Undertale" draggable="false">
-<h5 class="mt-2 mb-0">Undertale</h5>
-<p class="card-text fg-2 flex-grow-1">RPG - Humor - Escolhas e Consequências</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card h-100">
- <div class="card-body d-flex flex-column">
-<img src="images/Layers of Fear.jpg" class="card-img" alt="Layers of Fear" draggable="false">
-<h5 class="mt-2 mb-0">Layers of Fear</h5>
-<p class="card-text fg-2 flex-grow-1">Terror Psicológico - Exploração - Narrativa Imersiva</p>
-<a href="#" class="btn-primary mt-3">Saiba mais</a>
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
 </body>
-<footer class="navbar-expand-lg mt-auto navbar-dark bg-dark py-4 text-center" id="footer">
-  <div class="container">
-    <ul class="list-inline mb-4">
-      <li class="list-inline-item text-white mx-3"><a class="link-body-emphasis text-white text-decoration-none" href="#">Inicio</a></li>
-      <li class="list-inline-item mx-3"><a class="link-body-emphasis text-white  text-decoration-none" href="#">Jogos</a></li>
-      <li class="list-inline-item mx-3"><a class="link-body-emphasis text-white  text-decoration-none" href="#">Sobre</a></li>
-      <li class="list-inline-item mx-3"><a class="link-body-emphasis text-white  text-decoration-none" href="#">Contato</a></li>
-    </ul>
-    <span id="rodape">&copy; 2026 KJpixelgames — Todos os direitos reservados</span>
-  </div>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
 </html>

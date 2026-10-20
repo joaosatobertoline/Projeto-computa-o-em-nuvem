@@ -35,6 +35,10 @@
 .div-fundo {
   margin: 0;
   height: 75vh;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-top: 24px;
   background-color: #390e64;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,10 +47,9 @@
 
 #card-contato {
     max-width: 40rem;
-    max-height:10rem;
+    max-height:20rem;
     text-align: center;
     top: 30px;
-    left: 200px;
     background: rgba(199, 34, 185, 0.582);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(157,73,242,0.5);
@@ -55,10 +58,9 @@
 
 #card-info-contato {
     max-width: 40rem;
-    max-height: 10rem;
+    max-height: 20rem;
     text-align: center;
     top: 30px;
-    left: 450px;
     background: rgba(199, 34, 185, 0.582);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(157,73,242,0.5);
@@ -164,7 +166,7 @@
 #card-PVP {
     width: 20rem;
     top: 30px;
-    left: 400px;
+    text-align: center;
     background-color: #9e49f26e;
     color: #02FCEE;
 }
@@ -179,7 +181,7 @@
 #card-jogos {
     width: 20rem;
     top: 30px;
-    left: 500px;
+    text-align: center;
     background-color: #9e49f26e;
     color: #02FCEE;
 }
@@ -194,7 +196,7 @@
 #card-noticias {
     width: 20rem;
     top: 30px;
-    left: 600px;
+    text-align: center;
     background-color: #9e49f26e;
     color: #02FCEE;
 }
@@ -205,4 +207,24 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+.row-cols-md-3 > .col {
+    display: flex;
+    justify-content: center;
 }

@@ -50,15 +50,18 @@
 }
 
 #card-bem-vindo {
+    width: 35rem;
     max-width: 35rem;
-    max-height: 35rem;
+    box-sizing: border-box;
     text-align: center;
-    top: 150px;
-    left: 220px;
-    background: rgba(255,255,255,0.08);
+    position: relative;
+    top: 70px;
+    margin-left: 100px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(157,73,242,0.5);
-    box-shadow: 0 0 30px rgba(157,73,242,0.3);
+    border: 1px solid rgba(157, 73, 242, 0.5);
+    box-shadow: 0 0 30px rgba(157, 73, 242, 0.3);
 }
 
 .texto-degrade {
@@ -99,4 +102,20 @@
 #rodape {
   color: rgba(255, 255, 255, 0.685);
   font-size: 15px;
+}
+
+@media (max-width: 676px) {
+#card-bem-vindo {
+    width: 25rem;
+    max-width: 55rem;
+    box-sizing: border-box;
+    text-align: center;
+    top: 20px;
+    margin-inline: auto;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(157, 73, 242, 0.5);
+    box-shadow: 0 0 30px rgba(157, 73, 242, 0.3);
+}
+
 }

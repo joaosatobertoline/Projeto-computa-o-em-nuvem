@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="entrar.css">
+
+    <title>PIXELVERSE</title>
+</head>
+
+<body>
+
+    <div id="conteudo">
+
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+                <div class="container">
+
+                    <a href="index.html" aria-label="Página inicial do PIXELVERSE">
+                        <img src="images/logo.png"
+                            alt="Logo PIXELVERSE"
+                            width="300"
+                            height="80"
+                            class="logo-site">
+                    </a>
+
+                    <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuNavbar"
+                        aria-controls="menuNavbar"
+                        aria-expanded="false"
+                        aria-label="Abrir menu">
+
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menuNavbar">
+
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="jogos.html">Jogos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active fw-semibold"
+                                    href="contato.html"
+                                    aria-current="page">Contato</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Serviços
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="recomendacao.html">Recomendações</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="noticias.html">Notícias</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="analise.html">Análise</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item ms-lg-3">
+                                <a class="btn btn-primary rounded-pill px-4"
+                                    href="entrar.html">Entrar</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="div-image">
+
+            <div class="container-fluid">
+
+                <div class="row g-4 justify-content-center align-items-stretch">
+
+                    <div class="col-12 col-lg-5">
+
+                        <div class="card border-primary" id="card-contato">
+
+                            <h1 class="texto-degrade">
+                                Entre no Pixelverse!
+                            </h1>
+
+                            <p id="texto-bem-vindo">
+                                Se junte ao nosso universo de jogos.
+                            </p>
+
+                            <form id="form-contato">
+
+                                <div class="mb-3">
+                                    <label for="nomeContato" class="form-label">
+                                        Nome:
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        id="nomeContato"
+                                        name="nome"
+                                        placeholder="Digite seu nome"
+                                        autocomplete="name"
+                                        required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="emailContato" class="form-label">
+                                        E-mail:
+                                    </label>
+
+                                    <input type="email"
+                                        class="form-control"
+                                        id="emailContato"
+                                        name="email"
+                                        placeholder="nome@example.com"
+                                        autocomplete="email"
+                                        required>
+                                </div>
+
+                                <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Senha:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Confirmar senha:</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-field">
+                                  <input type="checkbox" id="exampleCheck1" class="check">
+                                  <label for="exampleCheck1">Notificações</label>
+                                  </div>
+                                  </form>
+
+                                <button type="submit" class="btn btn-primary">
+                                    Enviar
+                                </button>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="navbar-dark bg-dark py-4 text-center" id="footer">
+
+        <div class="container">
+
+            <ul class="list-inline mb-4">
+
+                <li class="list-inline-item mx-3">
+                    <a class="text-white text-decoration-none"
+                        href="index.html">Início</a>
+                </li>
+
+                <li class="list-inline-item mx-3">
+                    <a class="text-white text-decoration-none"
+                        href="jogos.html">Jogos</a>
+                </li>
+
+                <li class="list-inline-item mx-3">
+                    <a class="text-white text-decoration-none"
+                        href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="list-inline-item mx-3">
+                    <a class="text-white text-decoration-none"
+                        href="contato.html">Contato</a>
+                </li>
+
+            </ul>
+
+            <span id="rodape">
+                &copy; 2026 KJpixelgames — Todos os direitos reservados
+            </span>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
